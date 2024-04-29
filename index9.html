@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="body">
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem similique odio, laudantium sint dolores et, vel temporibus blanditiis nostrum nulla ratione error, praesentium possimus qui culpa esse recusandae rerum dolor!</h1>
+    <button class="btn">Click me </button>
+    <!-- <img src="bmi-scale.jpg" alt="" onmouseleave="leave()" onmousemove="zoom()" > -->
+    <img src="bmi-scale.jpg"  alt="">
+    <script>
+// let img = document.querySelector('img');
+// function zoom() {
+//     img.style.zoom='3';
+// }
+// function leave() {
+//     img.style.zoom='1';
+// }
+
+// for targeting compelete targeting screen target on documet
+let h1 = document.querySelector("h1");
+let btn=document.querySelector('.body');
+let newImg = document.querySelector("img");
+// let click=document.querySelector('button');
+// click.onclick()=>{
+// }
+document.onmousemove=(e)=>{
+    
+newImg.style.position="fixed";
+
+newImg.style.left=e.clientX + "px";
+newImg.style.top=e.clientY + "px";
+console.log(e.clientX);
+console.log(e);
+}
+
+    </script>
+</body>
+</html>

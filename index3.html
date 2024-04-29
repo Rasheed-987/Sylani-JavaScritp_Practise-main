@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 97vh;
+    }
+</style>
+<body>
+<div class="center">
+    <h1 id="matrix">Data</h1>
+</div>
+</body>
+<script>
+     let m1=[
+        [3,2,4],
+        [1,2,3],
+        [2,4,5]
+];
+let m2=[
+    [2,4,5],
+    [1,3,5],
+    [7,2,4]
+];
+function sum(){
+    let m1=[
+        [3,2,4],
+        [1,2,3],
+        [2,4,5]
+];
+let m2=[
+    [2,4,5],
+    [1,3,5],
+    [7,2,4]
+];
+let x=m1[0][1]+m2[0][1];  
+document.getElementById('matrix').innerHTML=x;
+}
+sum();
+</script>
+
+</html>
+
+//     let m1=[
+//         [3,2,4],
+//         [1,2,3],
+//         [2,4,5]
+// ];
+// let m2=[
+//     [2,4,5,],
+//     [1,3,5],
+//     [7,2,4]
+// ];
+
+// console.log(m1[0][2]);
+// console.log(m1[1][2]);
+// console.log(m1[2][2]);
+
+// document.getElementById('new').innerText=m1[0][1];
+// let fruits=["apple","banana","grapes"];
+// console.log(fruits);
+// fruits.slice(1);
+// console.log(fruits);
+// console.log(fruits.length);
+
+
+// let x=prompt('enter a array');
+
+//console.log(fruits);
+

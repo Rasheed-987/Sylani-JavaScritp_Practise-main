@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JS CreateElement Demo</title>
+</head>
+<body>
+    <ul id="menu">
+        <li>Home</li>
+    </ul>
+    
+</body>
+</html>
+    <script>
+       let x=document.createElement('div');
+       x.innerHTML='<p>this is new</p>';
+       x.id='content';
+       document.body.appendChild(x);
+       console.log(x);
+let li=document.createElement('li');
+        li.textContent='new item added';
+        menu.appendChild(li);
+        li.textContent='new item added 11';
+        menu.appendChild(li);
+
+
+
+    </script>
+</body>
+</html>
